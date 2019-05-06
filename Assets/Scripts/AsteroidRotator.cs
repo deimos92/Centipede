@@ -8,6 +8,7 @@ public class AsteroidRotator : MonoBehaviour
 
     void Start()
     {
-        GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.angularVelocity = Random.insideUnitSphere * tumble;
     }
 }
